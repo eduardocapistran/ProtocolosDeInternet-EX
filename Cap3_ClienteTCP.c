@@ -20,7 +20,7 @@ int main(void) {
 				exit(1);
 		}
 
-		sa.sin_damily = AF_INET;
+		sa.sin_family = AF_INET;
 		sa.sin_port = htons(PUERTO);
 		if (!inet_aton(HOST, &sa.sin_addr)) {
 				perror("inet_aton");
